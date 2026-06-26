@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images Example</title>
+    <style>
+        body
+        {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .image-container
+        {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px; /* Add space between images */
+        }
+        img
+        {
+            display: block;
+            margin: 20px 0;
+        }
+        .thumbnail
+        {
+            width: 150px;
+            height: auto;
+        }
+        .fullsize
+        {
+            width: 150px;
+            height: auto;
+        }
+        .rounded
+        {
+            border-radius: 40%;
+            width: 150px;
+            height: auto;
+        }
+        .border
+        {
+            border: 2px solid black;
+            width: 150px;
+            height: auto;
+        }
+        .shadow
+        {
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+            width: 150px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h2>
+        Different Image Types and Styles</h2>
+    <div class="image-container">
+        <div>
+            <h3>Inline Image</h3>
+            <img src="images/1.jpg" alt="Inline Image Example" class="fullsize">
+        </div>
+        <div>
+            <h3>Thumbnail Image</h3>
+            <img src="images/2.jpg" alt="Thumbnail Image Example" class="thumbnail">
+        </div>
+        <div>
+            <h3>Rounded Image</h3>
+            <img src="images/1.jpg" alt="Rounded Image Example" class="thumbnail rounded">
+        </div>
+        <div>
+            <h3>Image with Border</h3>
+            <img src="images/2.jpg" alt="Image with Border Example" class="fullsize border">
+        </div>
+        <div>
+            <h3>Image with Shadow</h3>
+            <img src="images/1.jpg" alt="Image with Shadow Example" class="fullsize shadow">
+        </div>
+        <div>
+            <h3>Responsive Image</h3>
+            <img src="images/2.jpg" alt="Responsive Image Example" class="fullsize">
+        </div>
+        <div>
+            <h3>Linked Image</h3>
+            <a href="https://basponccollege.org/">
+                <img src="images/CollegeLogo.png" alt="Linked Image Example" class="fullsize">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
